@@ -668,8 +668,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.41203703703703703,
-            "y": 0.13846153846153847,
+            "x": 0.41269841269841273,
+            "y": 0.26153846153846155,
             "uniqueID": 393105,
             "ioValues": [
                 {
@@ -788,8 +788,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.08862433862433863,
-                    "y": 0.36615384615384616,
+                    "x": 0.08664021164021164,
+                    "y": 0.3630769230769231,
                     "uniqueID": 197242,
                     "projectID": "466821306",
                     "ioValues": [
@@ -1020,8 +1020,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.05687830687830688,
-                    "y": 0.8584615384615385,
+                    "x": 0.056216931216931214,
+                    "y": 0.8646153846153847,
                     "uniqueID": 451404,
                     "projectID": "466821306",
                     "ioValues": [
@@ -1236,7 +1236,7 @@
     ],
     "fileTypeVersion": 1,
     "simplify": false,
-    "unitsIndex": 0,
+    "unitsIndex": "1",
     "filetypeVersion": 1,
     "circleSegmentSize": "0.051"
 }

@@ -3,9 +3,9 @@
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
 |400 Watt Solar Pannel|30|$9360.00|https://www.ecodirect.com/Canadian-Solar-CS1Y-400W-All-Black-Solar-Panel-p/canadian-solar-cs1y-400m5.htm|
-|Quick Mount PV QBase Low Slope Mount|32|$489.28|https://www.solarflexion.com/product-p/qmlsh-7-a-12.htm|
-|Support Rail|1760|$13.20|www.example.com|
-|Riser|16|$96.00|www.example.com|
-|Total: |1838|$9958.48| |
+|Quick Mount PV QBase Low Slope Mount|42|$642.18|https://www.solarflexion.com/product-p/qmlsh-7-a-12.htm|
+|Support Rail|1792|$70.80|www.example.com|
+|Riser|21|$126.00|www.example.com|
+|Total: |1885|$10198.98| |
 
- 3xCOG MSRP: $29875.44
+ 3xCOG MSRP: $30596.94
