@@ -2,6 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|Total: |0|$0.00| |
+|400 Watt Solar Pannel|20|$6240.00|https://www.ecodirect.com/Canadian-Solar-CS1Y-400W-All-Black-Solar-Panel-p/canadian-solar-cs1y-400m5.htm|
+|Total: |20|$6240.00| |
 
- 3xCOG MSRP: $0.00
+ 3xCOG MSRP: $18720.00
