@@ -820,7 +820,7 @@
                     "ioValues": [
                         {
                             "name": "Number Of Pannels",
-                            "ioValue": 6
+                            "ioValue": 7
                         },
                         {
                             "name": "Angle",
@@ -889,7 +889,7 @@
                     "ioValues": [
                         {
                             "name": "Number Of Pannels",
-                            "ioValue": 6
+                            "ioValue": 8
                         },
                         {
                             "name": "Angle",
@@ -958,7 +958,7 @@
                     "ioValues": [
                         {
                             "name": "Number Of Pannels",
-                            "ioValue": 4
+                            "ioValue": 6
                         },
                         {
                             "name": "Angle",
@@ -1027,7 +1027,7 @@
                     "ioValues": [
                         {
                             "name": "Number Of Pannels",
-                            "ioValue": 4
+                            "ioValue": 5
                         },
                         {
                             "name": "Angle",
