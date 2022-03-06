@@ -688,6 +688,29 @@
             "topLevel": false,
             "allAtoms": [
                 {
+                    "atomType": "Molecule",
+                    "name": "Stan",
+                    "x": 0.25925925925925924,
+                    "y": 0.5415384615384615,
+                    "uniqueID": 471842,
+                    "ioValues": [],
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.9867724867724867,
+                            "y": 0.5,
+                            "uniqueID": 459951,
+                            "ioValues": []
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "simplify": false,
+                    "unitsIndex": 0
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 0.9867724867724867,
