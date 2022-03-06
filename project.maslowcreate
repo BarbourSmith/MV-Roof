@@ -710,17 +710,36 @@
         {
             "atomType": "Molecule",
             "name": "Solar",
-            "x": 0.1752645502645503,
-            "y": 0.8246153846153846,
+            "x": 0.16997354497354497,
+            "y": 0.8307692307692307,
             "uniqueID": 831718,
             "ioValues": [],
             "topLevel": false,
             "allAtoms": [
                 {
+                    "atomType": "GitHubMolecule",
+                    "name": "Solar Rack",
+                    "x": 0.07341269841269842,
+                    "y": 0.1846153846153846,
+                    "uniqueID": 296486,
+                    "projectID": "466821306",
+                    "ioValues": [
+                        {
+                            "name": "Number Of Pannels",
+                            "ioValue": 4
+                        },
+                        {
+                            "name": "Angle",
+                            "ioValue": -20
+                        }
+                    ],
+                    "simplify": false
+                },
+                {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.18915343915343916,
-                    "y": 0.13846153846153847,
+                    "x": 0.19047619047619047,
+                    "y": 0.12923076923076923,
                     "uniqueID": 340001,
                     "ioValues": [
                         {
@@ -740,25 +759,6 @@
                             "ioValue": 45
                         }
                     ]
-                },
-                {
-                    "atomType": "GitHubMolecule",
-                    "name": "Solar Rack",
-                    "x": 0.07407407407407407,
-                    "y": 0.2276923076923077,
-                    "uniqueID": 296486,
-                    "projectID": "466821306",
-                    "ioValues": [
-                        {
-                            "name": "Number Of Pannels",
-                            "ioValue": 4
-                        },
-                        {
-                            "name": "Angle",
-                            "ioValue": -20
-                        }
-                    ],
-                    "simplify": false
                 },
                 {
                     "atomType": "Rotate",
@@ -883,7 +883,7 @@
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
                     "x": 0.06746031746031746,
-                    "y": 0.5415384615384615,
+                    "y": 0.5230769230769231,
                     "uniqueID": 895932,
                     "projectID": "466821306",
                     "ioValues": [
@@ -926,8 +926,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.15674603174603174,
-                    "y": 0.6338461538461538,
+                    "x": 0.15806878306878305,
+                    "y": 0.6523076923076924,
                     "uniqueID": 153217,
                     "ioValues": [
                         {
@@ -951,8 +951,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.056216931216931214,
-                    "y": 0.7169230769230769,
+                    "x": 0.052910052910052914,
+                    "y": 0.6984615384615385,
                     "uniqueID": 788836,
                     "projectID": "466821306",
                     "ioValues": [
@@ -995,7 +995,7 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.17328042328042328,
+                    "x": 0.167989417989418,
                     "y": 0.8215384615384614,
                     "uniqueID": 687296,
                     "ioValues": [
@@ -1020,8 +1020,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.06547619047619048,
-                    "y": 0.8830769230769231,
+                    "x": 0.05687830687830688,
+                    "y": 0.8584615384615385,
                     "uniqueID": 451404,
                     "projectID": "466821306",
                     "ioValues": [
@@ -1081,18 +1081,18 @@
             ],
             "allConnectors": [
                 {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 2",
-                    "ap2Primary": false,
-                    "ap1ID": 340001,
-                    "ap2ID": 825225
-                },
-                {
                     "ap1Name": "Geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 296486,
                     "ap2ID": 340001
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 340001,
+                    "ap2ID": 825225
                 },
                 {
                     "ap1Name": "geometry",
