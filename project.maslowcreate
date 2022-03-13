@@ -683,6 +683,23 @@
             ]
         },
         {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.4847883597883598,
+            "y": 0.5723076923076923,
+            "uniqueID": 784614,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "source/743868/393105Assembly"
+                },
+                {
+                    "name": "tag",
+                    "ioValue": "Solar"
+                }
+            ]
+        },
+        {
             "atomType": "Move",
             "name": "Move",
             "x": 0.3167989417989418,
@@ -710,8 +727,8 @@
         {
             "atomType": "Molecule",
             "name": "Solar",
-            "x": 0.167989417989418,
-            "y": 0.8123076923076924,
+            "x": 0.16732804232804233,
+            "y": 0.7692307692307692,
             "uniqueID": 831718,
             "ioValues": [],
             "topLevel": false,
@@ -993,6 +1010,23 @@
                     ]
                 },
                 {
+                    "atomType": "ExtractTag",
+                    "name": "Extract Tag",
+                    "x": 0.7572751322751322,
+                    "y": 0.3353846153846154,
+                    "uniqueID": 488538,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "source/743868/831718/825225Assembly"
+                        },
+                        {
+                            "name": "tag",
+                            "ioValue": "Solar"
+                        }
+                    ]
+                },
+                {
                     "atomType": "Rotate",
                     "name": "Rotate",
                     "x": 0.167989417989418,
@@ -1184,6 +1218,13 @@
                     "ap2Primary": false,
                     "ap1ID": 825225,
                     "ap2ID": 222648
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 825225,
+                    "ap2ID": 488538
                 }
             ],
             "fileTypeVersion": 1,
@@ -1218,6 +1259,13 @@
             "ap2Primary": false,
             "ap1ID": 393105,
             "ap2ID": 169572
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 393105,
+            "ap2ID": 784614
         },
         {
             "ap1Name": "geometry",
