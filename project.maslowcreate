@@ -685,8 +685,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.4847883597883598,
-            "y": 0.5723076923076923,
+            "x": 0.48412698412698413,
+            "y": 0.5446153846153846,
             "uniqueID": 784614,
             "ioValues": [
                 {
@@ -899,8 +899,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.06746031746031746,
-                    "y": 0.5230769230769231,
+                    "x": 0.06679894179894179,
+                    "y": 0.5169230769230769,
                     "uniqueID": 895932,
                     "projectID": "466821306",
                     "ioValues": [
@@ -1012,8 +1012,8 @@
                 {
                     "atomType": "ExtractTag",
                     "name": "Extract Tag",
-                    "x": 0.7572751322751322,
-                    "y": 0.3353846153846154,
+                    "x": 0.6838624338624338,
+                    "y": 0.3507692307692307,
                     "uniqueID": 488538,
                     "ioValues": [
                         {
@@ -1232,6 +1232,33 @@
             "unitsIndex": 0
         },
         {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.6461640211640212,
+            "y": 0.7046153846153845,
+            "uniqueID": 753311,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": "source/743868/935594GitHubMolecule"
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": "source/743868/784614ExtractTag"
+                }
+            ]
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "Incident solar energy",
+            "x": 0.48214285714285715,
+            "y": 0.8276923076923077,
+            "uniqueID": 935594,
+            "projectID": "259087553",
+            "ioValues": [],
+            "simplify": false
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9867724867724867,
@@ -1269,6 +1296,20 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "Geometry",
+            "ap2Primary": false,
+            "ap1ID": 784614,
+            "ap2ID": 935594
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 784614,
+            "ap2ID": 753311
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 576490,
@@ -1280,6 +1321,13 @@
             "ap2Primary": true,
             "ap1ID": 831718,
             "ap2ID": 576490
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 935594,
+            "ap2ID": 753311
         }
     ],
     "fileTypeVersion": 1,

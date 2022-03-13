@@ -49,3 +49,6 @@ Number of Stancheons
 https://www.ecodirect.com/ProductDetails.asp?ProductCode=IronRidge%2D51%2D6007%2D500L is another stand off option
 
 
+Returns a rough approximation of the total solar energy incident on a input geometry. Very rough because it assumes a static sun position.
+
+
