@@ -685,8 +685,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.49074074074074076,
-            "y": 0.19384615384615383,
+            "x": 0.4338624338624339,
+            "y": 0.4584615384615384,
             "uniqueID": 921629,
             "ioValues": [
                 {
@@ -703,36 +703,26 @@
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 45
                 }
             ]
         },
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.458994708994709,
-            "y": 0.5046153846153846,
+            "x": 0.5297619047619048,
+            "y": 0.5169230769230769,
             "uniqueID": 784614,
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "source/743868/393105Assembly"
+                    "ioValue": "source/743868/921629Rotate"
                 },
                 {
                     "name": "tag",
                     "ioValue": "Solar"
                 }
             ]
-        },
-        {
-            "atomType": "GitHubMolecule",
-            "name": "Incident solar energy",
-            "x": 0.5628306878306878,
-            "y": 0.4861538461538462,
-            "uniqueID": 935594,
-            "projectID": "259087553",
-            "ioValues": [],
-            "simplify": false
         },
         {
             "atomType": "Move",
@@ -1267,35 +1257,14 @@
             "unitsIndex": 0
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.6481481481481481,
-            "y": 0.6523076923076924,
-            "uniqueID": 753311,
-            "ioValues": [
-                {
-                    "name": "3D shape 1",
-                    "ioValue": 91.6277826075682
-                },
-                {
-                    "name": "3D shape 2",
-                    "ioValue": "source/743868/784614ExtractTag"
-                }
-            ]
-        },
-        {
-            "atomType": "Code",
-            "name": "Code",
-            "x": 0.5271164021164021,
-            "y": 0.7784615384615385,
-            "uniqueID": 493767,
-            "ioValues": [
-                {
-                    "name": "Input1",
-                    "ioValue": "source/743868/784614ExtractTag"
-                }
-            ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\n\nconst incidentSolarEnergyPerMeter = 1000; //watts/m^2\nconst incidentSolarEnergyPerMM = incidentSolarEnergyPerMeter / 1000000;\n\nconst angleOfTheSun = -29.7; //degrees...totall aproximation because obvously the sun moves. Found from https://www.solarpaneltilt.com/\n\n//Offset our angle by where the sun is\nconst rotatedShape = Input1.rotateY(angleOfTheSun/360);\n\nconst sun = Box(10,10,10).z(300).color(\"yellow\").rotateY(angleOfTheSun);\n\n//console.log('After rotate');\n\nconst pannelSize = rotatedShape.cast().area();\n\nconst incidentEnergy = incidentSolarEnergyPerMM * pannelSize;\n\n//log('Incident energy: ' + incidentEnergy);\n\nreturn Group(rotatedShape.cast(), sun);"
+            "atomType": "GitHubMolecule",
+            "name": "Incident solar energy",
+            "x": 0.6587301587301587,
+            "y": 0.52,
+            "uniqueID": 935594,
+            "projectID": "259087553",
+            "ioValues": [],
+            "simplify": false
         },
         {
             "atomType": "Rotate",
@@ -1321,6 +1290,37 @@
                     "ioValue": 0
                 }
             ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.6997354497354497,
+            "y": 0.7753846153846153,
+            "uniqueID": 753311,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 83.98828044448678
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": "source/743868/784614ExtractTag"
+                }
+            ]
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.582010582010582,
+            "y": 0.8799999999999999,
+            "uniqueID": 493767,
+            "ioValues": [
+                {
+                    "name": "Input1",
+                    "ioValue": "source/743868/784614ExtractTag"
+                }
+            ],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\n\nconst incidentSolarEnergyPerMeter = 1000; //watts/m^2\nconst incidentSolarEnergyPerMM = incidentSolarEnergyPerMeter / 1000000;\n\nconst angleOfTheSun = -29.7; //degrees...totall aproximation because obvously the sun moves. Found from https://www.solarpaneltilt.com/\n\n//Offset our angle by where the sun is\nconst rotatedShape = Input1.rotateY(-30/360);\n\nconst sun = Box(10,10,10).z(300).color(\"yellow\").rotateY(angleOfTheSun);\n\n//console.log('After rotate');\n\nconst pannelSize = rotatedShape.cast().area();\n\nconst incidentEnergy = incidentSolarEnergyPerMM * pannelSize;\n\n//log('Incident energy: ' + incidentEnergy);\n\nreturn rotatedShape;//Group(rotatedShape.cast(), sun);"
         },
         {
             "atomType": "Output",
@@ -1356,14 +1356,14 @@
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 393105,
-            "ap2ID": 784614
+            "ap2ID": 921629
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
-            "ap1ID": 393105,
-            "ap2ID": 921629
+            "ap1ID": 921629,
+            "ap2ID": 784614
         },
         {
             "ap1Name": "geometry",
@@ -1387,13 +1387,6 @@
             "ap2ID": 493767
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "3D shape 1",
-            "ap2Primary": false,
-            "ap1ID": 935594,
-            "ap2ID": 753311
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
@@ -1406,6 +1399,13 @@
             "ap2Primary": true,
             "ap1ID": 831718,
             "ap2ID": 576490
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 935594,
+            "ap2ID": 753311
         }
     ],
     "fileTypeVersion": 1,
