@@ -668,8 +668,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.41269841269841273,
-            "y": 0.26153846153846155,
+            "x": 0.35912698412698413,
+            "y": 0.21538461538461537,
             "uniqueID": 393105,
             "ioValues": [
                 {
@@ -683,10 +683,35 @@
             ]
         },
         {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.49074074074074076,
+            "y": 0.19384615384615383,
+            "uniqueID": 921629,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "source/743868/393105Assembly"
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.48412698412698413,
-            "y": 0.5446153846153846,
+            "x": 0.458994708994709,
+            "y": 0.5046153846153846,
             "uniqueID": 784614,
             "ioValues": [
                 {
@@ -698,6 +723,16 @@
                     "ioValue": "Solar"
                 }
             ]
+        },
+        {
+            "atomType": "GitHubMolecule",
+            "name": "Incident solar energy",
+            "x": 0.5628306878306878,
+            "y": 0.4861538461538462,
+            "uniqueID": 935594,
+            "projectID": "259087553",
+            "ioValues": [],
+            "simplify": false
         },
         {
             "atomType": "Move",
@@ -1234,13 +1269,13 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6507936507936508,
-            "y": 0.6676923076923077,
+            "x": 0.6481481481481481,
+            "y": 0.6523076923076924,
             "uniqueID": 753311,
             "ioValues": [
                 {
                     "name": "3D shape 1",
-                    "ioValue": "source/743868/935594GitHubMolecule"
+                    "ioValue": 91.6277826075682
                 },
                 {
                     "name": "3D shape 2",
@@ -1249,14 +1284,43 @@
             ]
         },
         {
-            "atomType": "GitHubMolecule",
-            "name": "Incident solar energy",
-            "x": 0.48280423280423285,
-            "y": 0.803076923076923,
-            "uniqueID": 935594,
-            "projectID": "259087553",
-            "ioValues": [],
-            "simplify": false
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.5271164021164021,
+            "y": 0.7784615384615385,
+            "uniqueID": 493767,
+            "ioValues": [
+                {
+                    "name": "Input1",
+                    "ioValue": "source/743868/784614ExtractTag"
+                }
+            ],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\n\nconst incidentSolarEnergyPerMeter = 1000; //watts/m^2\nconst incidentSolarEnergyPerMM = incidentSolarEnergyPerMeter / 1000000;\n\nconst angleOfTheSun = -29.7; //degrees...totall aproximation because obvously the sun moves. Found from https://www.solarpaneltilt.com/\n\n//Offset our angle by where the sun is\nconst rotatedShape = Input1.rotateY(angleOfTheSun/360);\n\nconst sun = Box(10,10,10).z(300).color(\"yellow\").rotateY(angleOfTheSun);\n\n//console.log('After rotate');\n\nconst pannelSize = rotatedShape.cast().area();\n\nconst incidentEnergy = incidentSolarEnergyPerMM * pannelSize;\n\n//log('Incident energy: ' + incidentEnergy);\n\nreturn Group(rotatedShape.cast(), sun);"
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.7784391534391535,
+            "y": 0.6307692307692307,
+            "uniqueID": 889886,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": -20
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ]
         },
         {
             "atomType": "Output",
@@ -1296,6 +1360,20 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 393105,
+            "ap2ID": 921629
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 784614,
+            "ap2ID": 753311
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Geometry",
             "ap2Primary": false,
             "ap1ID": 784614,
@@ -1303,9 +1381,16 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 2",
+            "ap2Name": "Input1",
             "ap2Primary": false,
             "ap1ID": 784614,
+            "ap2ID": 493767
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 935594,
             "ap2ID": 753311
         },
         {
@@ -1321,13 +1406,6 @@
             "ap2Primary": true,
             "ap1ID": 831718,
             "ap2ID": 576490
-        },
-        {
-            "ap1Name": "Geometry",
-            "ap2Name": "3D shape 1",
-            "ap2Primary": false,
-            "ap1ID": 935594,
-            "ap2ID": 753311
         }
     ],
     "fileTypeVersion": 1,
