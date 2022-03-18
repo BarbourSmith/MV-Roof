@@ -959,14 +959,14 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Solar Rack",
-                    "x": 0.18515562649640863,
-                    "y": 0.6338461538461538,
+                    "x": 0.18121693121693122,
+                    "y": 0.6738461538461538,
                     "uniqueID": 788836,
                     "projectID": "466821306",
                     "ioValues": [
                         {
                             "name": "Number Of Pannels",
-                            "ioValue": 10
+                            "ioValue": 6
                         },
                         {
                             "name": "Angle",
@@ -1026,6 +1026,25 @@
                     ]
                 },
                 {
+                    "atomType": "GitHubMolecule",
+                    "name": "Solar Rack",
+                    "x": 0.12301587301587302,
+                    "y": 0.8307692307692307,
+                    "uniqueID": 451404,
+                    "projectID": "466821306",
+                    "ioValues": [
+                        {
+                            "name": "Number Of Pannels",
+                            "ioValue": 5
+                        },
+                        {
+                            "name": "Angle",
+                            "ioValue": -10
+                        }
+                    ],
+                    "simplify": false
+                },
+                {
                     "atomType": "ExtractTag",
                     "name": "Extract Tag",
                     "x": 0.7781324820430966,
@@ -1041,25 +1060,6 @@
                             "ioValue": "Solar"
                         }
                     ]
-                },
-                {
-                    "atomType": "GitHubMolecule",
-                    "name": "Solar Rack",
-                    "x": 0.11375661375661376,
-                    "y": 0.9169230769230768,
-                    "uniqueID": 451404,
-                    "projectID": "466821306",
-                    "ioValues": [
-                        {
-                            "name": "Number Of Pannels",
-                            "ioValue": 5
-                        },
-                        {
-                            "name": "Angle",
-                            "ioValue": -10
-                        }
-                    ],
-                    "simplify": false
                 },
                 {
                     "atomType": "Rotate",
@@ -1089,8 +1089,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.49082202713487627,
-                    "y": 0.796923076923077,
+                    "x": 0.4920634920634921,
+                    "y": 0.8092307692307692,
                     "uniqueID": 495397,
                     "ioValues": [
                         {
