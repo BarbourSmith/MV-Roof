@@ -683,6 +683,22 @@
             ]
         },
         {
+            "atomType": "Constant",
+            "name": "Angle",
+            "x": 0.036375661375661374,
+            "y": 0.49538461538461537,
+            "uniqueID": 301843,
+            "ioValues": [
+                {
+                    "name": "number",
+                    "ioValue": -5.901599336772065
+                }
+            ],
+            "evolve": true,
+            "min": -20,
+            "max": 0
+        },
+        {
             "atomType": "Rotate",
             "name": "Rotate",
             "x": 0.4021164021164021,
@@ -733,29 +749,17 @@
             ]
         },
         {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.48363926576217076,
-            "y": 0.6030769230769231,
-            "uniqueID": 784614,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "source/743868/921629Rotate"
-                },
-                {
-                    "name": "tag",
-                    "ioValue": "Solar"
-                }
-            ]
-        },
-        {
             "atomType": "Molecule",
             "name": "Solar",
             "x": 0.16732804232804233,
-            "y": 0.7692307692307692,
+            "y": 0.7476923076923077,
             "uniqueID": 831718,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "Angle",
+                    "ioValue": -5.901599336772065
+                }
+            ],
             "topLevel": false,
             "allAtoms": [
                 {
@@ -772,7 +776,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -10
+                            "ioValue": -5.901599336772065
                         }
                     ],
                     "simplify": false
@@ -791,7 +795,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -10
+                            "ioValue": -5.901599336772065
                         }
                     ],
                     "simplify": false
@@ -885,7 +889,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -10
+                            "ioValue": -5.901599336772065
                         }
                     ],
                     "simplify": false
@@ -914,22 +918,6 @@
                             "ioValue": 45
                         }
                     ]
-                },
-                {
-                    "atomType": "Constant",
-                    "name": "Angle",
-                    "x": 0.06943335993615322,
-                    "y": 0.5723076923076923,
-                    "uniqueID": 119473,
-                    "ioValues": [
-                        {
-                            "name": "number",
-                            "ioValue": -10
-                        }
-                    ],
-                    "evolve": true,
-                    "min": -20,
-                    "max": 0
                 },
                 {
                     "atomType": "Move",
@@ -970,10 +958,18 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -10
+                            "ioValue": -5.901599336772065
                         }
                     ],
                     "simplify": false
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Angle",
+                    "x": 0.013333333333333334,
+                    "y": 0.7015384615384614,
+                    "uniqueID": 721960,
+                    "ioValues": []
                 },
                 {
                     "atomType": "Rotate",
@@ -1039,7 +1035,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -10
+                            "ioValue": -5.901599336772065
                         }
                     ],
                     "simplify": false
@@ -1205,41 +1201,6 @@
                     "ap2ID": 183017
                 },
                 {
-                    "ap1Name": "number",
-                    "ap2Name": "Angle",
-                    "ap2Primary": false,
-                    "ap1ID": 119473,
-                    "ap2ID": 788836
-                },
-                {
-                    "ap1Name": "number",
-                    "ap2Name": "Angle",
-                    "ap2Primary": false,
-                    "ap1ID": 119473,
-                    "ap2ID": 451404
-                },
-                {
-                    "ap1Name": "number",
-                    "ap2Name": "Angle",
-                    "ap2Primary": false,
-                    "ap1ID": 119473,
-                    "ap2ID": 895932
-                },
-                {
-                    "ap1Name": "number",
-                    "ap2Name": "Angle",
-                    "ap2Primary": false,
-                    "ap1ID": 119473,
-                    "ap2ID": 197242
-                },
-                {
-                    "ap1Name": "number",
-                    "ap2Name": "Angle",
-                    "ap2Primary": false,
-                    "ap1ID": 119473,
-                    "ap2ID": 296486
-                },
-                {
                     "ap1Name": "geometry",
                     "ap2Name": "3D shape 3",
                     "ap2Primary": false,
@@ -1252,6 +1213,41 @@
                     "ap2Primary": true,
                     "ap1ID": 788836,
                     "ap2ID": 153217
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 721960,
+                    "ap2ID": 451404
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 721960,
+                    "ap2ID": 788836
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 721960,
+                    "ap2ID": 895932
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 721960,
+                    "ap2ID": 197242
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Angle",
+                    "ap2Primary": false,
+                    "ap1ID": 721960,
+                    "ap2ID": 296486
                 },
                 {
                     "ap1Name": "geometry",
@@ -1306,6 +1302,23 @@
             "fileTypeVersion": 1,
             "simplify": false,
             "unitsIndex": 0
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.48363926576217076,
+            "y": 0.6030769230769231,
+            "uniqueID": 784614,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "source/743868/921629Rotate"
+                },
+                {
+                    "name": "tag",
+                    "ioValue": "Solar"
+                }
+            ]
         },
         {
             "atomType": "Code",
@@ -1393,6 +1406,13 @@
             "ap2ID": 921629
         },
         {
+            "ap1Name": "number",
+            "ap2Name": "Angle",
+            "ap2Primary": false,
+            "ap1ID": 301843,
+            "ap2ID": 831718
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
@@ -1407,18 +1427,18 @@
             "ap2ID": 393105
         },
         {
-            "ap1Name": "geometry",
-            "ap2Name": "Input1",
-            "ap2Primary": false,
-            "ap1ID": 784614,
-            "ap2ID": 493767
-        },
-        {
             "ap1Name": "Geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 831718,
             "ap2ID": 576490
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Input1",
+            "ap2Primary": false,
+            "ap1ID": 784614,
+            "ap2ID": 493767
         },
         {
             "ap1Name": "geometry",
