@@ -691,7 +691,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": -5.901599336772065
+                    "ioValue": -13.252175395730546
                 }
             ],
             "evolve": true,
@@ -701,8 +701,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.4021164021164021,
-            "y": 0.40307692307692305,
+            "x": 0.41203703703703703,
+            "y": 0.49230769230769234,
             "uniqueID": 921629,
             "ioValues": [
                 {
@@ -757,7 +757,7 @@
             "ioValues": [
                 {
                     "name": "Angle",
-                    "ioValue": -5.901599336772065
+                    "ioValue": -13.252175395730546
                 }
             ],
             "topLevel": false,
@@ -776,7 +776,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -5.901599336772065
+                            "ioValue": -13.252175395730546
                         }
                     ],
                     "simplify": false
@@ -795,7 +795,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -5.901599336772065
+                            "ioValue": -13.252175395730546
                         }
                     ],
                     "simplify": false
@@ -889,7 +889,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -5.901599336772065
+                            "ioValue": -13.252175395730546
                         }
                     ],
                     "simplify": false
@@ -958,7 +958,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -5.901599336772065
+                            "ioValue": -13.252175395730546
                         }
                     ],
                     "simplify": false
@@ -1035,7 +1035,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -5.901599336772065
+                            "ioValue": -13.252175395730546
                         }
                     ],
                     "simplify": false
@@ -1343,7 +1343,7 @@
             "ioValues": [
                 {
                     "name": "fitness function",
-                    "ioValue": 82.85328563155004
+                    "ioValue": 77.53046796757869
                 },
                 {
                     "name": "population size",
@@ -1364,7 +1364,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 82.85328563155004
+                    "ioValue": 77.53046796757869
                 }
             ],
             "currentEquation": "x"
