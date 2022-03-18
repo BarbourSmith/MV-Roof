@@ -708,23 +708,6 @@
             ]
         },
         {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.47817460317460314,
-            "y": 0.4523076923076923,
-            "uniqueID": 784614,
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "source/743868/921629Rotate"
-                },
-                {
-                    "name": "tag",
-                    "ioValue": "Solar"
-                }
-            ]
-        },
-        {
             "atomType": "Move",
             "name": "Move",
             "x": 0.3167989417989418,
@@ -746,6 +729,23 @@
                 {
                     "name": "zDist",
                     "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.48363926576217076,
+            "y": 0.6030769230769231,
+            "uniqueID": 784614,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "source/743868/921629Rotate"
+                },
+                {
+                    "name": "tag",
+                    "ioValue": "Solar"
                 }
             ]
         },
@@ -1259,8 +1259,8 @@
         {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.5079365079365079,
-            "y": 0.7507692307692307,
+            "x": 0.6121308858739026,
+            "y": 0.6369230769230769,
             "uniqueID": 493767,
             "ioValues": [
                 {
@@ -1268,24 +1268,42 @@
                     "ioValue": "source/743868/784614ExtractTag"
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\n\nconst incidentSolarEnergyPerMeter = 1000; //watts/m^2\nconst incidentSolarEnergyPerMM = incidentSolarEnergyPerMeter / 1000000;\n\nconst angleOfTheSun = 90 - 29.7; //degrees...totall aproximation because obvously the sun moves. Found from https://www.solarpaneltilt.com/\n\n//Offset our angle by where the sun is\nconst rotatedShape = Input1.rotateY(angleOfTheSun/360);\n\nconst sun = Box(10,10,10).z(300).color(\"yellow\").rotateY(angleOfTheSun/360);\n\n//console.log('After rotate');\n\nconst pannelSize = rotatedShape.cast().area();\n\nconst incidentEnergy = incidentSolarEnergyPerMM * pannelSize;\n\n//log('Incident energy: ' + incidentEnergy);\n\nreturn Group(Assembly(rotatedShape.cast()), sun, rotatedShape);"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[Input1];\n\n\nconst incidentSolarEnergyPerMeter = 1000; //watts/m^2\nconst incidentSolarEnergyPerMM = incidentSolarEnergyPerMeter / 1000000;\n\nconst angleOfTheSunMorning = 90 - 14.5; //degrees...totall aproximation because obvously the sun moves. Found from https://keisan.casio.com/exec/system/1224682277\nconst angleOfTheSunNoon = 90 - 28.68;\nconst angleOfTheSunAfternoon = 90 - 16.5;\n\n//Offset our angle by where the sun is\nconst rotatedShape = Input1.rotateY(angleOfTheSunNoon/360);\n\n//const sun = Box(10,10,10).z(300).color(\"yellow\").rotateY(angleOfTheSun/360);\n\nconst pannelSizeMorning = Input1.rotateY(angleOfTheSunMorning/360).cast().area();\nconst pannelSizeNoon = Input1.rotateY(angleOfTheSunNoon/360).cast().area();\nconst pannelSizeAfternoon = Input1.rotateY(angleOfTheSunAfternoon/360).cast().area();\n\nconst incidentEnergy = incidentSolarEnergyPerMM * ((pannelSizeMorning+pannelSizeNoon+pannelSizeAfternoon)/3);\n\n//log('Incident energy: ' + incidentEnergy);\n\nreturn incidentEnergy;"
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.6600529100529101,
-            "y": 0.6276923076923078,
-            "uniqueID": 753311,
+            "atomType": "GeneticAlgorithm",
+            "name": "Genetic Algorithm",
+            "x": 0.7589784517158819,
+            "y": 0.6,
+            "uniqueID": 515530,
             "ioValues": [
                 {
-                    "name": "3D shape 2",
-                    "ioValue": "source/743868/784614ExtractTag"
+                    "name": "fitness function",
+                    "ioValue": 0
                 },
                 {
-                    "name": "3D shape 3",
-                    "ioValue": "source/743868/493767Code"
+                    "name": "population size",
+                    "ioValue": 50
+                },
+                {
+                    "name": "number of generations",
+                    "ioValue": 10
                 }
             ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "x",
+            "x": 0.6392657621707901,
+            "y": 0.8523076923076923,
+            "uniqueID": 311087,
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 82.85328563155004
+                }
+            ],
+            "currentEquation": "x"
         },
         {
             "atomType": "Output",
@@ -1334,8 +1352,8 @@
             "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
-            "ap1ID": 784614,
-            "ap2ID": 753311
+            "ap1ID": 576490,
+            "ap2ID": 393105
         },
         {
             "ap1Name": "geometry",
@@ -1343,13 +1361,6 @@
             "ap2Primary": false,
             "ap1ID": 784614,
             "ap2ID": 493767
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "3D shape 2",
-            "ap2Primary": false,
-            "ap1ID": 576490,
-            "ap2ID": 393105
         },
         {
             "ap1Name": "Geometry",
@@ -1360,11 +1371,12 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 3",
+            "ap2Name": "x",
             "ap2Primary": false,
             "ap1ID": 493767,
-            "ap2ID": 753311
-        }
+            "ap2ID": 311087
+        },
+        null
     ],
     "fileTypeVersion": 1,
     "simplify": false,
