@@ -691,7 +691,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": -7.4727842058207585
+                    "ioValue": -12.20508440931174
                 }
             ],
             "evolve": true,
@@ -757,7 +757,7 @@
             "ioValues": [
                 {
                     "name": "Angle",
-                    "ioValue": -7.4727842058207585
+                    "ioValue": -12.20508440931174
                 }
             ],
             "topLevel": false,
@@ -776,7 +776,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -7.4727842058207585
+                            "ioValue": -12.20508440931174
                         }
                     ],
                     "simplify": false
@@ -795,7 +795,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -7.4727842058207585
+                            "ioValue": -12.20508440931174
                         }
                     ],
                     "simplify": false
@@ -889,7 +889,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -7.4727842058207585
+                            "ioValue": -12.20508440931174
                         }
                     ],
                     "simplify": false
@@ -958,7 +958,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -7.4727842058207585
+                            "ioValue": -12.20508440931174
                         }
                     ],
                     "simplify": false
@@ -1035,7 +1035,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -7.4727842058207585
+                            "ioValue": -12.20508440931174
                         }
                     ],
                     "simplify": false
@@ -1343,7 +1343,7 @@
             "ioValues": [
                 {
                     "name": "fitness function",
-                    "ioValue": 80.57917519993578
+                    "ioValue": 75.72805055014285
                 },
                 {
                     "name": "population size",
@@ -1364,7 +1364,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 80.57917519993578
+                    "ioValue": 75.72805055014285
                 }
             ],
             "currentEquation": "x"
