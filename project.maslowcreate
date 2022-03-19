@@ -691,7 +691,7 @@
             "ioValues": [
                 {
                     "name": "number",
-                    "ioValue": -18.51374553540375
+                    "ioValue": -4.467187217620046
                 }
             ],
             "evolve": true,
@@ -774,7 +774,7 @@
             "ioValues": [
                 {
                     "name": "Angle",
-                    "ioValue": -18.51374553540375
+                    "ioValue": -4.467187217620046
                 }
             ],
             "topLevel": false,
@@ -793,7 +793,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -18.51374553540375
+                            "ioValue": -4.467187217620046
                         }
                     ],
                     "simplify": false
@@ -812,7 +812,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -18.51374553540375
+                            "ioValue": -4.467187217620046
                         }
                     ],
                     "simplify": false
@@ -906,7 +906,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -18.51374553540375
+                            "ioValue": -4.467187217620046
                         }
                     ],
                     "simplify": false
@@ -975,7 +975,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -18.51374553540375
+                            "ioValue": -4.467187217620046
                         }
                     ],
                     "simplify": false
@@ -1052,7 +1052,7 @@
                         },
                         {
                             "name": "Angle",
-                            "ioValue": -18.51374553540375
+                            "ioValue": -4.467187217620046
                         }
                     ],
                     "simplify": false
@@ -1337,13 +1337,13 @@
         {
             "atomType": "GeneticAlgorithm",
             "name": "Genetic Algorithm",
-            "x": 0.7691798941798942,
-            "y": 0.6092307692307692,
+            "x": 0.7705026455026456,
+            "y": 0.6123076923076923,
             "uniqueID": 515530,
             "ioValues": [
                 {
                     "name": "fitness function",
-                    "ioValue": 74.98887568049462
+                    "ioValue": 75.72805055014285
                 },
                 {
                     "name": "population size",
@@ -1364,7 +1364,7 @@
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 74.98887568049462
+                    "ioValue": 75.72805055014285
                 }
             ],
             "currentEquation": "x"
